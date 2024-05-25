@@ -31,7 +31,7 @@ document.getElementById('add').addEventListener('click', function () {
     const tempElement = document.createElement('div');
     tempElement.style.color = color;
     if (tempElement.style.color) {
-        addText.innerText = color.toUpperCase();
+        addText.innerText = color.toLowerCase();
         document.body.style.backgroundColor = color;
 
         // Adjust text color for better readability if background is dark
