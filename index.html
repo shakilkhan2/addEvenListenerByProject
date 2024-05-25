@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+</head>
+<body>
+    <header>
+        <h1>Find Your Color</h1>
+        <h3 id="addText">Here</h3>
+    </header>
+    <main>
+        <button onclick="console.log('okay')">Click here</button>
+        <!-- 1 -->
+        <button onclick="document.body.style.backgroundColor = 'red'; document.getElementById('addText').innerText = 'Red' ">Make Red</button>
+        <!-- 2 -->
+        <button onclick="makeBlue()">Make Blue</button>
+        <!-- 3 -->
+        <button id="make_purple">Make Purple</button>
+        <!-- 3.0 -->
+        <button id="reset">Reset</button>
+        <!-- 4 -->
+        <button id="make_tomato">Make Tomato</button>
+        <!-- 4.0 -->
+        <button id="make_green">Make Green</button>
+        <!-- final version -->
+        <button id="make_yellow">Make Yellow</button>
+
+        <!-- input section -->
+        <div style="padding: 20px; text-align: center;">
+            <input type="text" name="" id="inputText" placeholder="Add"> 
+            <button id="add">Add Here</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        document.querySelector('h3').style.textAlign = 'center'
+    </script>
+    <script src="./js/addInputData.js"></script>
+    <script src="./js/dom-events.js"></script>
+</body>
+</html>
